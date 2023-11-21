@@ -20,8 +20,10 @@ export default function Home({navigation}) {
 
     return (
         <SafeAreaView style={styles.container}>
-          <View
+          <ImageBackground
             style={styles.backgroundImage}
+            source={require('../assets/background.png')}
+            resizeMode='contain'
           >
             <Logo />
             <View style={styles.centeredContainer}>
@@ -52,7 +54,7 @@ export default function Home({navigation}) {
                 </View>
               </View>
             </View>
-          </View>
+          </ImageBackground>
         </SafeAreaView>
       );
     }

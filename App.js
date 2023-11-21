@@ -6,10 +6,16 @@ import About from './screens/About';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import HowToPlay from './screens/HowToPlay';
-
+import initializeApp from "./components/Routing";
+import { useEffect} from 'react';
 const Stack = createBottomTabNavigator();
 
 export default function App() {
+
+  useEffect(() => {
+    initializeApp()
+  }, []);
+
   return (
     <NavigationContainer>
         <Stack.Navigator initialRouteName="Home"

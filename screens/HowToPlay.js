@@ -1,53 +1,68 @@
-import { View, Text, ScrollView, StyleSheet, Image } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  StyleSheet,
+  Image,
+  ImageBackground,
+} from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function HowToPlay() {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
-        <View style={styles.flexTitle}>
-          <Text style={styles.title}>How to Play</Text>
-        </View>
+      <ImageBackground
+        style={styles.backgroundImage}
+        source={require("../assets/background.png")}
+        resizeMode="contain"
+      >
+        <ScrollView>
+          <View style={styles.flexTitle}>
+            <Text style={styles.title}>How to Play</Text>
+          </View>
 
-        <View>
-          <Text style={styles.textIntro}>Welcome to the ABC Explorer: Discover & Learn!</Text>
-        </View>
+          <View>
+            <Text style={styles.textIntro}>
+              Welcome to the ABC Explorer: Discover & Learn!
+            </Text>
+          </View>
 
-        <View>
-          <Text style={styles.textIntro}>
-            Simply click on a letter, and watch as the magic unfolds!
-          </Text>
-        </View>
-        <View>
-          <Image
-            source={require("../assets/HowToPlay/explanation.png")}
-            resizeMode="contain"
-            style={styles.image}
-          ></Image>
-        </View>
-        <View>
-          <Text style={styles.textIntro}>
-            Each letter corresponds to a delightful item or animals,
-          </Text>
-        </View>
+          <View>
+            <Text style={styles.textIntro}>
+              Simply click on a letter, and watch as the magic unfolds!
+            </Text>
+          </View>
+          <View>
+            <Image
+              source={require("../assets/HowToPlay/explanation.png")}
+              resizeMode="contain"
+              style={styles.image}
+            ></Image>
+          </View>
+          <View>
+            <Text style={styles.textIntro}>
+              Each letter corresponds to a delightful item or animals,
+            </Text>
+          </View>
 
-        <View>
-          <Image
-            source={require("../assets/HowToPlay/explanation2.png")}
-            resizeMode="contain"
-            style={styles.image}
-          ></Image>
-        </View>
+          <View>
+            <Image
+              source={require("../assets/HowToPlay/explanation2.png")}
+              resizeMode="contain"
+              style={styles.image}
+            ></Image>
+          </View>
 
-        <View>
-          <Text style={styles.textIntro}>
-            providing an exciting opportunity to discover new words and expand
-            your knowledge. From "A" for apple to "Z" for zebra, there's a whole
-            world of words waiting to be explored.
-          </Text>
-        </View>
-      </ScrollView>
+          <View>
+            <Text style={styles.textIntro}>
+              providing an exciting opportunity to discover new words and expand
+              your knowledge. From "A" for apple to "Z" for zebra, there's a
+              whole world of words waiting to be explored.
+            </Text>
+          </View>
+        </ScrollView>
+      </ImageBackground>
     </SafeAreaView>
   );
 }
@@ -70,12 +85,14 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    fontWeight: 'bold'
   },
 
   title: {
     padding: 20,
     fontSize: 40,
     color: "black",
+    fontWeight: 'bold'
   },
 
   textIntro: {
@@ -83,6 +100,7 @@ const styles = StyleSheet.create({
     padding: 10,
     textAlign: "justify",
     color: "black",
+    fontWeight: 'bold'
   },
   image: {
     alignSelf: "center",

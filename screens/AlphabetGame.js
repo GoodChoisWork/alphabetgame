@@ -1,9 +1,8 @@
-import { StyleSheet, View, Text, Image, Dimensions } from "react-native";
+import { StyleSheet, View, Text, Image, Dimensions, ImageBackground } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import FlipCard from "react-native-flip-card";
 import Carousel from "../components/Carousel";
-import data from "../data/data";
+import {data} from "../data/data";
 import Logo from "../components/Logo";
 
 const carouselData = data;
@@ -12,10 +11,16 @@ const height = Dimensions.get("window").height;
 export default function AlphabetGame() {
   return (
     <SafeAreaView style={styles.container}>
+      <ImageBackground
+            style={styles.backgroundImage}
+            source={require('../assets/background.png')}
+            resizeMode='contain'
+          >
       <Logo/>
       <View style={styles.flipBoxContainer}>
         <Carousel data={carouselData} />
       </View>
+      </ImageBackground>
     </SafeAreaView>
   );
 }
@@ -27,8 +32,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#fff",
   },
+  backgroundImage: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
   flipBoxContainer: {
-    height: height - 190,
+    height: height - 220,
   },
   logoContainer: {
     marginTop: '10%',

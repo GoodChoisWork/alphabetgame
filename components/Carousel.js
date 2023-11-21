@@ -115,7 +115,12 @@ const styles = StyleSheet.create({
     width: Dimensions.get("window").width
   },
   letter :{
-    fontSize : 70
+    fontSize: 70,
+    fontWeight: "bold",
+    color: "black",
+    textShadowColor: "rgb(6,57,112)",
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 10,
   },
   image :{
     width: '70%',
