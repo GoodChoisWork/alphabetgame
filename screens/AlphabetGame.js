@@ -6,7 +6,7 @@ import Carousel from "../components/Carousel";
 import data from "../data/data";
 
 const carouselData = data;
-const height = Dimensions.get('window').height
+const height = Dimensions.get("window").height;
 
 export default function AlphabetGame() {
   return (
@@ -15,7 +15,7 @@ export default function AlphabetGame() {
         <Text style={styles.logoText}>Alphabet Game</Text>
       </View>
       <View style={styles.flipBoxContainer}>
-        <Carousel data={carouselData} /> 
+        <Carousel data={carouselData} />
       </View>
     </SafeAreaView>
   );
@@ -24,18 +24,18 @@ export default function AlphabetGame() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: "#fff"
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff",
   },
-  flipBoxContainer :{
-    height: height - 150,
+  flipBoxContainer: {
+    height: height - 200,
   },
-  logoContainer :{
-    marginTop: 10,
+  logoContainer: {
+    marginTop: 90,
   },
-  logoText:{
+  logoText: {
     fontSize: 40,
-    padding: 10
-  }
+    padding: 10,
+  },
 });
