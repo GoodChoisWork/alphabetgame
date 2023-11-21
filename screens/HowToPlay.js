@@ -85,14 +85,16 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    fontWeight: 'bold'
+    fontWeight: "bold",
+    textAlign: "center",
   },
 
   title: {
     padding: 20,
     fontSize: 40,
     color: "black",
-    fontWeight: 'bold'
+    fontWeight: "bold",
+    textAlign: "center",
   },
 
   textIntro: {
@@ -100,7 +102,8 @@ const styles = StyleSheet.create({
     padding: 10,
     textAlign: "justify",
     color: "black",
-    fontWeight: 'bold'
+    fontWeight: "bold",
+    textAlign: "center",
   },
   image: {
     alignSelf: "center",
