@@ -71,7 +71,7 @@ const Carousel = ({ data }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    height : 150
+    height : 150,
   },
   slide: {
     width: Dimensions.get("window").width,
@@ -95,7 +95,6 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   cardContainer :{
-    borderColor : 'red',
     alignItems: "center",
     justifyContent : 'center',
     flex: 1,
@@ -105,30 +104,25 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems : 'center',
     alignSelf: "center",
-    height : 50,
     backgroundColor : 'white'
   },
   face:{
     justifyContent : 'center',
     alignItems: 'center',
-    borderColor: 'red',
-    borderWidth: 1,
     flex: 1,
     width: Dimensions.get("window").width,
   },
   back :{
     justifyContent : 'center',
     alignItems: 'center',
-    borderColor: 'red',
-    borderWidth: 1,
     flex: 1,
     width: Dimensions.get("window").width
   },
   letter :{
-    fontSize : 100
+    fontSize : 70
   },
   image :{
-    width: '90%'
+    width: Dimensions.get("window").width
   }
 });
 
