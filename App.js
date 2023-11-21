@@ -1,13 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, Text } from 'react-native';
-import { SafeAreaView } from "react-native-safe-area-context";
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 import Home from './screens/Home';
 import AlphabetGame from './screens/AlphabetGame';
 import About from './screens/About';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import HowToPlay from './screens/HowToPlay';
 
 const Stack = createBottomTabNavigator();
 
@@ -26,6 +24,9 @@ export default function App() {
             } else if (route.name === 'Game') {
               iconName = focused ? 'game-controller' : 'game-controller-outline';
             }
+            else if (route.name === 'How To Play') {
+              iconName = focused ? 'ios-help' : 'ios-help-outline';
+            }
             else if (route.name === 'About') {
               iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline';
             }
@@ -36,6 +37,7 @@ export default function App() {
         })}>
           <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
           <Stack.Screen name="Game" component={AlphabetGame} options={{ headerShown: false }} />
+          <Stack.Screen name="How To Play" component={HowToPlay} options={{ headerShown: false }} />
           <Stack.Screen name="About" component={About} options={{ headerShown: false }} />
         </Stack.Navigator>
         <StatusBar style='auto'></StatusBar>

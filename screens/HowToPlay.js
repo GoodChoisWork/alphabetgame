@@ -1,13 +1,13 @@
-import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { View, Text, ScrollView, StyleSheet, Image } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function About() {
+export default function HowToPlay() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <View style={styles.flexTitle}>
-          <Text style={styles.title}>About</Text>
+          <Text style={styles.title}>How to Play</Text>
         </View>
 
         <View>
@@ -16,25 +16,35 @@ export default function About() {
 
         <View>
           <Text style={styles.textIntro}>
-            The ABC Explorer: Discover & Learn is an interactive and educational experience
-            designed to make learning the alphabet fun and engaging for all
-            ages.
+            Simply click on a letter, and watch as the magic unfolds!
+          </Text>
+        </View>
+        <View>
+          <Image
+            source={require("../assets/HowToPlay/explanation.png")}
+            resizeMode="contain"
+            style={styles.image}
+          ></Image>
+        </View>
+        <View>
+          <Text style={styles.textIntro}>
+            Each letter corresponds to a delightful item or animals,
           </Text>
         </View>
 
         <View>
-          <Text style={styles.textIntro}>
-            Whether you're a curious child just starting to explore the world of
-            letters or an adult looking to brush up on your vocabulary, this
-            game is perfect for you.
-          </Text>
+          <Image
+            source={require("../assets/HowToPlay/explanation2.png")}
+            resizeMode="contain"
+            style={styles.image}
+          ></Image>
         </View>
 
         <View>
           <Text style={styles.textIntro}>
-            Embark on a journey through the alphabet and discover a world of
-            words waiting to be explored. Let the Alphabet Game be your guide as
-            you delve into the exciting realm of language and letters.
+            providing an exciting opportunity to discover new words and expand
+            your knowledge. From "A" for apple to "Z" for zebra, there's a whole
+            world of words waiting to be explored.
           </Text>
         </View>
       </ScrollView>
@@ -45,7 +55,6 @@ export default function About() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    textAlign :'justify'
   },
 
   backgroundImage: {
@@ -61,14 +70,12 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    textAlign :'justify'
   },
 
   title: {
     padding: 20,
     fontSize: 40,
     color: "black",
-    textAlign :'justify'
   },
 
   textIntro: {
@@ -76,5 +83,10 @@ const styles = StyleSheet.create({
     padding: 10,
     textAlign: "justify",
     color: "black",
+  },
+  image: {
+    alignSelf: "center",
+    height: 250,
+    width: 200,
   },
 });

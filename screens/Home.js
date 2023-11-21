@@ -34,6 +34,14 @@ export default function Home({navigation}) {
                     <Text style={styles.buttonText}>Play Game</Text>
                   </TouchableOpacity>
                 </View>
+
+                <View
+                  style={styles.button}
+                >
+                  <TouchableOpacity onPress={() => navigateToScreen("How To Play")}>
+                    <Text style={styles.buttonText}>How To Play</Text>
+                  </TouchableOpacity>
+                </View>
     
                 <View
                   style={styles.button}

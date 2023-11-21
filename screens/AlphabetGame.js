@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import FlipCard from "react-native-flip-card";
 import Carousel from "../components/Carousel";
 import data from "../data/data";
+import Logo from "../components/Logo";
 
 const carouselData = data;
 const height = Dimensions.get("window").height;
@@ -11,9 +12,7 @@ const height = Dimensions.get("window").height;
 export default function AlphabetGame() {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.logoContainer}>
-        <Text style={styles.logoText}>Alphabet Game</Text>
-      </View>
+      <Logo/>
       <View style={styles.flipBoxContainer}>
         <Carousel data={carouselData} />
       </View>
