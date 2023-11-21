@@ -1,0 +1,31 @@
+const data = [
+    { letter: 'A', trend: 'Apple', image: require('../assets/AlphabetEquivalent/Apple.jpg') },
+    { letter: 'B', trend: 'Banana', image: '' },
+    { letter: 'C', trend: 'Cat', image: 'url_to_cat_image' },
+    { letter: 'D', trend: 'Dog', image: 'url_to_dog_image' },
+    { letter: 'E', trend: 'Elephant', image: 'url_to_elephant_image' },
+    { letter: 'F', trend: 'Flower', image: 'url_to_flower_image' },
+    { letter: 'G', trend: 'Guitar', image: 'url_to_guitar_image' },
+    { letter: 'H', trend: 'Hiking', image: 'url_to_hiking_image' },
+    { letter: 'I', trend: 'Ice Cream', image: 'url_to_ice_cream_image' },
+    { letter: 'J', trend: 'Jazz Music', image: 'url_to_jazz_music_image' },
+    { letter: 'K', trend: 'Kite Flying', image: 'url_to_kite_flying_image' },
+    { letter: 'L', trend: 'Lion', image: 'url_to_lion_image' },
+    { letter: 'M', trend: 'Mountains', image: 'url_to_mountains_image' },
+    { letter: 'N', trend: 'Night Sky', image: 'url_to_night_sky_image' },
+    { letter: 'O', trend: 'Ocean', image: 'url_to_ocean_image' },
+    { letter: 'P', trend: 'Piano', image: 'url_to_piano_image' },
+    { letter: 'Q', trend: 'Quokka', image: 'url_to_quokka_image' },
+    { letter: 'R', trend: 'Rainbow', image: 'url_to_rainbow_image' },
+    { letter: 'S', trend: 'Sunset', image: 'url_to_sunset_image' },
+    { letter: 'T', trend: 'Tropical Beach', image: 'url_to_tropical_beach_image' },
+    { letter: 'U', trend: 'Unicorn', image: 'url_to_unicorn_image' },
+    { letter: 'V', trend: 'Volcano', image: 'url_to_volcano_image' },
+    { letter: 'W', trend: 'Waterfall', image: 'url_to_waterfall_image' },
+    { letter: 'X', trend: 'Xylophone', image: 'url_to_xylophone_image' },
+    { letter: 'Y', trend: 'Yoga', image: 'url_to_yoga_image' },
+    { letter: 'Z', trend: 'Zeppelin', image: 'url_to_zeppelin_image' },
+  ];
+  
+  export default data;
+  
