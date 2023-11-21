@@ -29,10 +29,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   flipBoxContainer: {
-    height: height - 200,
+    height: height - 190,
   },
   logoContainer: {
-    marginTop: 90,
+    marginTop: '10%',
   },
   logoText: {
     fontSize: 40,
