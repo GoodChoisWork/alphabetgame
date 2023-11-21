@@ -41,7 +41,7 @@ const Carousel = ({ data }) => {
           </View>
           {/* Back Side */}
           <View style={styles.back}>
-            <Image source={item.image} style={styles.image}/>
+            <Image source={item.image} style={styles.image} resizeMode="contain"/>
             <Text style={styles.letter}>{item.trend}</Text>
           </View>
         </FlipCard>
@@ -69,10 +69,6 @@ const Carousel = ({ data }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    height : 150,
-  },
   slide: {
     width: Dimensions.get("window").width,
     justifyContent: "center",
@@ -122,7 +118,8 @@ const styles = StyleSheet.create({
     fontSize : 70
   },
   image :{
-    width: Dimensions.get("window").width
+    width: '70%',
+    height: '50%'
   }
 });
 

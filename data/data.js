@@ -1,5 +1,5 @@
 const data = [
-    { letter: 'A', trend: 'Apple', image: require('../assets/AlphabetEquivalent/Apple.jpg') },
+    { letter: 'A', trend: 'Apple', image: require('../assets/AlphabetEquivalent/Apple.png') },
     { letter: 'B', trend: 'Banana', image: require('../assets/AlphabetEquivalent/Banana.jpg') },
     // { letter: 'C', trend: 'Cat', image: 'url_to_cat_image' },
     // { letter: 'D', trend: 'Dog', image: 'url_to_dog_image' },
